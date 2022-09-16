@@ -13,6 +13,10 @@ class Task extends Model
         'title_task',
         'id_user',
         'description',
+        'start',
+        'end',
+        'color',
+        'status',
     ];
     protected $primaryKey = 'id_task';
 }

@@ -29,7 +29,11 @@ class TaskController extends Controller
         $response = Task::create([
             'title_task' => $request['title'],
             'id_user' => 1,
-            'description' => $request['description']
+            'description' => $request['description'],
+            'start' => $request['start'],
+            'end' => $request['end'],
+            'color' => $request['color'],
+            'status' => '1',
         ]);
 
 
@@ -55,7 +59,11 @@ class TaskController extends Controller
 
             'title_task' => $request['title'],
             'id_user' => 1,
-            'description' => $request['description']
+            'description' => $request['description'],
+            'start' => $request['start'],
+            'end' => $request['end'],
+            'color' => $request['color'],
+            'status' => '1',
 
         ]);
         return response('se ha actualizado la tarea', 200);

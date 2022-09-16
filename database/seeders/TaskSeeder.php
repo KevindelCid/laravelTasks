@@ -19,7 +19,13 @@ class TaskSeeder extends Seeder
 
             'title_task' => 'primera tarea',
             'id_user' => 1,
-            'description' => 'descripcion de la tarea que estamos creando desde un seeder'
+            'description' => 'descripcion de la tarea que estamos creando desde un seeder',
+            'start' => '2022-09-09',
+            'end' => '2022-09-10',
+            'color' => '#fff',
+            'status' => '1',
+
+
         ]);
     }
 }

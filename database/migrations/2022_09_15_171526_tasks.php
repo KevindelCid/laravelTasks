@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('title_task')->default('No data');
             $table->bigInteger('id_user');
             $table->string('description')->nullable();
+            $table->date('start');
+            $table->date('end');
+            $table->string('color');
+            $table->string('status');
             $table->timestamps();
         });
     }
